@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("BG1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 40px;
+  color: rgb(84, 84, 239);
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+}
+
+/*  both login and sign up */
+.login_box,
+.sign_up_box {
+  position: absolute;              
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  background: transparent;
+  padding: 40px 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+/* Inputs */
+.login_box input,
+.sign_up_box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.login_box input:focus,
+.sign_up_box input:focus {
+  border-color: #2575fc;
+  box-shadow: 0 0 8px rgba(37, 117, 252, 0.4);
+}
+
+/* Buttons */
+#submit, #submit2 {
+  width: 100%;
+  background-color:black;
+  color: #a8a6a6;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+#submit:hover {
+  background-color: rgb(39, 39, 38);
+}
+#submit2:hover {
+  background-color: rgb(39, 39, 38);
+}
+/* Text  */
+#new_login,#login2 {
+  color: white;
+  font-size: 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+#login2:hover {
+   color: aliceblue;
+  transition-duration: 1000;
+  letter-spacing: 0.1px;
+}
+
+
+#new_login:hover{
+  color: aliceblue;
+  transition-duration: 1000;
+  letter-spacing: 0.2px;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 500px) {
+  .login_box, .sign_up_box {
+    width: 90%;
+    padding: 30px 25px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
